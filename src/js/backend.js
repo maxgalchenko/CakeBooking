@@ -26,6 +26,11 @@
           statusListMap[xhr.status] ||
           'Response Status: ' + xhr.status + ' ' + xhr.statusText;
         onError(error);
+        // initialize pins UI even if data fails to load
+        if (typeof window.makePins === 'function') {
+          window.advertsData = [];
+          window.makePins();
+        }
       }
     };
     return xhr;
