@@ -67,6 +67,10 @@ Open http://localhost:3000
 
 - `npm test` – placeholder script (exits with error; no tests configured)
 
+## Screenshots
+
+![Main](./src/img/screenshots/cakebooking-main.png)
+
 ---
 
 <div align="center">
