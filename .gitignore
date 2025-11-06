@@ -11,3 +11,5 @@ node_modules/
 !.vscode/launch.json
 !.vscode/extensions.json
 .DS_Store
+
+node_modules/

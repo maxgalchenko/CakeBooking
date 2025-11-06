@@ -74,7 +74,7 @@ function makePins() {
       function onMouseUp(e) {
         e.preventDefault();
         document.removeEventListener('mousemove', onMouseMove);
-        document.removeEventListener('mousemove', onMouseUp);
+        document.removeEventListener('mouseup', onMouseUp);
       }
       document.addEventListener('mousemove', onMouseMove);
       document.addEventListener('mouseup', onMouseUp);
@@ -108,3 +108,6 @@ function makePins() {
   onMainMapPin();
   onMapPin();
 }
+
+// ensure global reference for backend callback
+window.makePins = makePins;
